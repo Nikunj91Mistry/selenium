@@ -1,0 +1,18 @@
+1614751829983	geckodriver	INFO	Listening on 127.0.0.1:57754
+1614751833160	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVIDA~1\\AppData\\Local\\Temp\\rust_mozprofileapW9XG"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614751868902	Marionette	INFO	Listening on port 57764
+1614751869638	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 6496, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1614752792844	Marionette	INFO	Stopped listening on port 57764
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+nsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1614752291225	Marionette	INFO	Listening on port 58135
+1614752291765	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614752375489	Marionette	INFO	Stopped listening on port 58135
+Invalid port. Exiting...
+Invalid port. Exiting...

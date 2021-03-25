@@ -65,4 +65,6 @@ class Locators(object):
     episode_type_text = "//form[1]/div[12]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"
     episode_email_message = "//form[1]/div[14]/textarea[1]"
 
+    logo = "//img[@src='/mumbler-logo.svg']"
+
 

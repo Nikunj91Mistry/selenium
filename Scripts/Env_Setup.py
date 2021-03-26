@@ -1,9 +1,11 @@
 import unittest
 import time
 import datetime
+
+import HtmlTestRunner
 from selenium import webdriver
-from Properties.Locators import Locators
-from Properties.Id_Passeord import IdPassword
+import Locators
+import Id_Passeord
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 
@@ -26,8 +28,8 @@ class EnvSetup(unittest.TestCase):
         self.driver.find_element_by_xpath (Locators.login).click()
         time.sleep (5)
 
-        self.driver.find_element_by_xpath (Locators.login_email).send_keys(IdPassword.nikunj37)
-        self.driver.find_element_by_xpath (Locators.login_password).send_keys(IdPassword.password)
+        self.driver.find_element_by_xpath (Locators.login_email).send_keys(Id_Passeord.nikunj37)
+        self.driver.find_element_by_xpath (Locators.login_password).send_keys(Id_Passeord.password)
         self.driver.find_element_by_xpath (Locators.login_button).click()
         time.sleep (5)
 
@@ -67,3 +69,7 @@ class EnvSetup(unittest.TestCase):
                 for error in errors:
                     print("Error : " + error.text)
                 EnvSetup.take_screenshot(self)
+
+
+if __name__ == "__main__":
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../Reports'))

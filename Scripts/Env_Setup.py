@@ -15,7 +15,7 @@ class EnvSetup(unittest.TestCase):
         print("Setup Function")
         self.driver = webdriver.Chrome(executable_path="../webdrivers/chromedriver_88.0.4324.190.exe")
         self.driver.maximize_window()
-        self.driver.set_page_load_timeout (30)
+        self.driver.set_page_load_timeout(60)
 
     def tearDown(self):
         print("Teardown Function")

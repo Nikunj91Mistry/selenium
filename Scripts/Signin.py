@@ -1,9 +1,8 @@
 import time
 
-from Base_Setup.Env_Setup import EnvSetup
-from Properties.Locators import Locators
-from Properties.Id_Passeord import IdPassword
-from selenium.common.exceptions import NoSuchElementException
+from Scripts.Env_Setup import EnvSetup
+from Scripts.Locators import Locators
+import Id_Passeord
 
 
 class Singin(EnvSetup):
@@ -15,10 +14,11 @@ class Singin(EnvSetup):
         time.sleep(5)
         login_page_title = self.driver.title
 
-        # self.driver.find_element_by_xpath(Locators.login_email).send_keys(Id_Password.nikunj37)
-        # self.driver.find_element_by_xpath(Locators.login_password).send_keys(Id_Password.password)
-        # self.driver.find_element_by_xpath(Locators.login_button).click()
-        # time.sleep(5)
+        self.driver.find_element_by_xpath(Locators.login_email).send_keys(Id_Passeord.IdPassword.nikunj37)
+        self.driver.find_element_by_xpath(Locators.login_password).send_keys(Id_Passeord.IdPassword.password)
+        self.driver.find_element_by_xpath(Locators.login_button).click()
+        time.sleep(5)
+        print(self.driver.get_cookies())
 
         current_page_title = self.driver.title
 
